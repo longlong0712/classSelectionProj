@@ -1,0 +1,11 @@
+.catalog{
+    bottom:30px;
+}
+.catalog a{
+    coler:black;
+    text-decoration: none;
+}
+.catalog a:hover{
+    text-decoration: underline;
+}
+
