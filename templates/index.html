@@ -7,6 +7,7 @@
 </head>
 <body>
 <div class="topContent">
+    <img src="imgs/pic1.jpg" height="60px">
     <span class="banner1" style="font-size: 30px">逢甲大學選課系統</span>
         <div class="catalog">
                     <a href="https://coursesearch03.fcu.edu.tw/main.aspx?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MTIyNjE4NTJ9.Z1_V9AnBlvPTTaTJoVHh6HLF5F9rAstRP1Hd2WLlngM">
@@ -58,11 +59,13 @@
         <legend> 登入(Login) </legend>
         <label>帳號 :</label>
         <div class="input-box">
-            <input type="text" maxlength="8" palceholder="textEntery" required>
+            <form method="POST">
+            <input type="text" maxlength="8" palceholder="Username", name="Usernamme" required></form>
         </div>
         <label>密碼 :</label>
         <div class="input-box">
-            <input type="password" palceholder="password" required>
+            <form method="POST">
+                <input type="password" palceholder="Password", name="Password" required></form>
         </div>
         <div class="remember-forget">
             <lable><input type="checkbox"> Remember me</lable>

@@ -80,4 +80,10 @@
 /*    display: block;*/
 /*    opacity: 1;*/
 /*}*/
-
+.day{
+    width: 30px;
+}
+.course{
+    width: 100px;
+    align-content: center;
+}

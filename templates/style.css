@@ -4,8 +4,13 @@
 .catalog a{
     coler:black;
     text-decoration: none;
+    top: 30px;
 }
 .catalog a:hover{
     text-decoration: underline;
 }
-
+.banner1{
+    position: relative;
+    bottom: 30px;
+    left: 70%;
+}
