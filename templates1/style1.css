@@ -80,10 +80,16 @@
 /*    display: block;*/
 /*    opacity: 1;*/
 /*}*/
-section{
-    margin: 0;
-    padding: 0;
-    font-family: Arial;
+/*section{*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    font-family: Arial;*/
+/*}*/
+
+td{
+    width: 100px; /* 设置单元格宽度 */
+    height: 50px;
+    content: "\00a0";
 }
 
 table,th,td{
@@ -91,6 +97,7 @@ table,th,td{
     width: 42px;
     height: 20px;
     margin-left: 0;
+    border: 1px solid black;
     padding: 5px;
     text-align: center;
     border: 2px solid #000000;

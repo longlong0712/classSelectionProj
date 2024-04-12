@@ -98,3 +98,6 @@ function auth_teachername()
     }
 }
 
+// var code_btn = document.getElementById("code_btn");
+
+
