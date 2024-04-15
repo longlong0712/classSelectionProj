@@ -1,0 +1,122 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<style>-->
+<!--    table{-->
+<!--        width: 500px;-->
+<!--        margin: 100px auto;-->
+<!--        border-collapse: collapse;-->
+<!--        text-align: center;-->
+<!--    }-->
+<!--    td, tr{-->
+<!--        border: 1px solid black;-->
+<!--    }-->
+
+<!--    thead tr{-->
+<!--        height: 40px;-->
+<!--        background-color: #cccccc;-->
+<!--    }-->
+<!--</style>-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>dynamicpopout</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<table cellspacing="0">-->
+<!--    <thead>-->
+<!--    <tr>-->
+<!--        <th>姓名</th>-->
+<!--        <th>科目</th>-->
+<!--        <th>成績</th>-->
+<!--        <th>操作</th>-->
+<!--    </tr>-->
+<!--    </thead>-->
+<!--    <tbody></tbody>-->
+<!--</table>-->
+<!--<script>-->
+<!--    var datas = [-->
+<!--            {-->
+<!--            name: 'Alen',-->
+<!--            subject:'Javascript',-->
+<!--            score:100-->
+<!--        },-->
+<!--        {-->
+<!--            name: 'Orkin',-->
+<!--            subject:'Javascript',-->
+<!--            score:100-->
+<!--        },-->
+<!--        {-->
+<!--            name: 'Tim',-->
+<!--            subject:'Javascript',-->
+<!--            score:100-->
+<!--        },-->
+<!--        {-->
+<!--            name: 'Isabella',-->
+<!--            subject:'Javascript',-->
+<!--            score:100-->
+<!--        }];-->
+<!--    var tbody = document.querySelector('tbody');-->
+<!--    for(var i = 0; i < datas.length; i++)-->
+<!--    {-->
+<!--        var tr = document.createElement('tr');-->
+<!--        tbody.appendChild(tr);-->
+<!--        for(var k in datas[i]){-->
+<!--            var td = document.createElement('td');-->
+<!--            td.innerHTML = datas[i][k]; //i是第幾個k是內容-->
+<!--            tr.appendChild(td);-->
+<!--        }-->
+<!--    }-->
+
+<!--</script>-->
+<!--</body>-->
+<html>
+<head>
+    <link rel="stylesheet" href="hi.css">
+    <title>Hi</title>
+</head>
+<body>
+<button onClick="toggleTable()">Open Table</button>
+
+<table id="myTable" style="width:50%" class="hidden">
+
+    <tr>
+
+        <th>Firstname</th>
+
+        <th>Lastname</th>
+
+        <th>Age</th>
+
+    </tr>
+
+    <tr>
+
+        <td>Jill</td>
+
+        <td>Smith</td>
+
+        <td>50</td>
+
+    </tr>
+
+    <tr>
+
+        <td>Eve</td>
+
+        <td>Jackson</td>
+
+        <td>94</td>
+
+    </tr>
+
+</table>
+<script>
+    function toggleTable() {
+
+        document.getElementById("myTable").classList.toggle("hidden");
+
+    }
+</script>
+</body>
+</html>
+<!--效果圖<img src="/wp-content/images1/20180920/201203280920571733.jpg" alt="" />-->
+<!--</html>-->
