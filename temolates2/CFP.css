@@ -1,0 +1,15 @@
+table{
+    width: 70%;
+    margin: 100px auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+td,th{
+    border: 1px solid black;
+}
+
+thead tr{
+    height: 40px;
+    background-color: gray;
+}
