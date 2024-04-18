@@ -1,0 +1,25 @@
+td{
+    width: 100px; /* 设置单元格宽度 */
+    height: 50px;
+    content: "\00a0";
+}
+
+table,th,td{
+    table-layout: fixed;
+    width: 42px;
+    height: 20px;
+    margin-left: 0;
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid #000000;
+    border-collapse: collapse;
+}
+td:first-child{
+    width: 20px;
+}
+
+td:not(:first-child)
+{
+    width: 42px;
+}
