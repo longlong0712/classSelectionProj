@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="CFP.css">
+    <script src="AddorRetire.js"></script>
     <title>課程查詢頁面</title>
 </head>
 <body>
@@ -17,14 +18,13 @@
     <thead>
     <tr>
         <th>選課代碼</th>
-        <th>課程編碼</th>
         <th>課程名稱</th>
         <th>學分</th>
         <th>必選修</th>
         <th>開課班級</th>
         <th>上課時間/上課教室/授課教師</th>
         <th>實收名額/開放名額</th>
-        <th>備註</th>
+        <th>加選/退選</th>
     </tr>
     </thead>
         <tr>
@@ -35,14 +35,32 @@
             <td>1</td>
             <td>1</td>
             <td>1</td>
-            <td>1</td>
-            <td> </td>
+            <td><input type="submit" value="加選" id="add-btn">
         </tr>
     <tbody>
 
     </tbody>
 
 </table>
+
+<script type="text/javascript">
+    window.onload=function()
+    {
+        var a = document.getElementById("add-btn");
+        a.onclick=function ()
+        {
+            var b = document.getElementById("add-btn").value;
+            if(b === "加選")
+            {
+                document.getElementById("add-btn").value="退選";
+            }
+            if(b === "退選")
+            {
+                document.getElementById("add-btn").value="加選";
+            }
+        }
+    }
+</script>
 
 </body>
 </html>
