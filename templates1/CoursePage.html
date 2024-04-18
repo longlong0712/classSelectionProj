@@ -12,14 +12,15 @@
 </div>
 <div class="require">
     <input type="checkbox" name="First" id="first">
-    <lable> 選課代號 : </lable>
+    <label> 選課代號 : </label>
     <input type="text" id = "code" maxlength="4" palceholder="textEntery" required>
 <!--    <input type="submit" id="code_btn" onclick="auth_code()">-->
     <br>
 
     <input type="checkbox" name="Second" id="second">
-    <lable> 星期 : </lable>
+    <label> 星期 : </label>
     <select name="Time" id="time">
+        <option value="None"> </option>
         <option value="Mon">星期一</option>
         <option value="Tue">星期二</option>
         <option value="Wed">星期三</option>
@@ -32,18 +33,18 @@
     <br>
 
     <input type="checkbox" name="Third" id="third">
-    <lable> 科目名稱 : </lable>
+    <label> 科目名稱 : </label>
     <input type="text"  id="name" maxlength="4" palceholder="textEntery" required>
 <!--    <input type="submit" id="name_btn" onclick="auth_name()">-->
     <br>
 
     <input type="checkbox" name="Fourth" id="fourth">
-    <lable> 開課教師姓名 : </lable>
+    <label> 開課教師姓名 : </label>
 
     <input type="text" id="teachername" maxl ength="4" palceholder="textEntery" required>
 </div>
     <div>
-        <input type="submit" id="total_btn" onclick="auth_code(),auth_time(),auth_name(),auth_teachername()">
+        <input type="submit" id="total_btn" onclick="authenticate()">
     </div>
 <br>
 </body>
