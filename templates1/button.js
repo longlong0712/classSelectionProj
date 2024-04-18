@@ -49,6 +49,7 @@ function authenticate() {
     var thirdChecked = document.getElementById("third").checked;
     var fourthChecked = document.getElementById("fourth").checked;
 
+    console.log(firstChecked,secondChecked,thirdChecked,fourthChecked)
     var checkedCount = 0;
     if (firstChecked) checkedCount++;
     if (secondChecked) checkedCount++;
