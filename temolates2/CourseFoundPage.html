@@ -14,7 +14,7 @@
 <!--    #是CourcePage的網址到時候記得放!!!!!!!-->
 </div>
 
-<table cellspacing="0">
+<table id="courseTable" cellspacing="0">
     <thead>
     <tr>
         <th>選課代碼</th>
@@ -31,10 +31,10 @@
             <td>100000000</td>
             <td>1</td>
             <td>1</td>
+            <td id="abs">1</td>
             <td>1</td>
             <td>1</td>
-            <td>1</td>
-            <td>1</td>
+            <td>60/60</td>
             <td><input type="submit" value="加選" id="add-btn">
         </tr>
     <tbody>
@@ -47,16 +47,29 @@
     window.onload=function()
     {
         var a = document.getElementById("add-btn");
+        let abs = document.getElementById("abs");
+
         a.onclick=function ()
         {
             var b = document.getElementById("add-btn").value;
-            if(b === "加選")
+            if(b === "退選" && abs.textContent.trim() === "1")
             {
+                alert("退選失敗，必修課如果需要退選請去找助教");
+            }
+            else if(b === "加選")
+            {
+                alert("加選成功");
                 document.getElementById("add-btn").value="退選";
             }
-            if(b === "退選")
+            else if(b === "退選")
             {
+                alert("退選成功");
                 document.getElementById("add-btn").value="加選";
+            }
+            else if(b === "加選")
+            {
+                alert("加選成功");
+                document.getElementById("add-btn").value="退選";
             }
         }
     }
