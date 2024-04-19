@@ -1,15 +1,30 @@
-table{
+table {
     width: 70%;
     margin: 100px auto;
     border-collapse: collapse;
     text-align: center;
 }
 
-td,th{
+td,
+th {
     border: 1px solid black;
 }
 
-thead tr{
+thead tr {
     height: 40px;
     background-color: gray;
+}
+
+thead th {
+    border: 1px solid black; /* Add a border to all header cells */
+}
+
+td.add-retire-header {
+    border: 1px solid black; /* Add a border to the cells in the column */
+}
+
+.add-btn {
+    border: 1px solid black; /* Add a border to the buttons */
+    width: 40px;
+    height: 20px;
 }
