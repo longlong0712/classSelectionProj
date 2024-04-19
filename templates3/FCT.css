@@ -1,3 +1,12 @@
+
+h1{
+    display: flex;
+    /* 水平置中 */
+    justify-content: center;
+    /* 垂直置中 */
+    align-items: center;
+}
+
 td{
     width: 100px; /* 设置单元格宽度 */
     height: 50px;
@@ -8,13 +17,15 @@ table,th,td{
     table-layout: fixed;
     width: 42px;
     height: 20px;
-    margin-left: 0;
+    margin: 100px auto;
     border: 1px solid black;
     padding: 5px;
     text-align: center;
     border: 2px solid #000000;
     border-collapse: collapse;
+    margin-top: -20px;
 }
+
 td:first-child{
     width: 20px;
 }
