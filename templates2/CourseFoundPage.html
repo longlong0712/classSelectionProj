@@ -59,7 +59,7 @@
                 abs: 0,
                 class: '資訊二合',
                 teacher: 'Ben Liu',
-                people: '60/60'
+                people: '59/60'
             },
             {
                 code: 1310,
@@ -89,20 +89,30 @@
 
             addButton.onclick = function () {
                 var buttonId = this.id.split('-')[2]; // 提取按钮的索引号
+                var peopleValue = data[buttonId].people;
+                var peopleArr = peopleValue.split('/'); // 分割字符串为数组
+                var actual = parseInt(peopleArr[0]); // 实收名额
+                var open = parseInt(peopleArr[1]); // 开放名额
                 var absValue = data[buttonId].abs;
 
-                if (this.value === '加選') {
-                    alert('加選成功');
-                    this.value = '退選';
-                } else if (this.value === '退選' && absValue === 1) {
+                // 检查是否已满
+                if (actual >= open) {
+                    alert('课程已满，无法加选');
+                }
+                else if (this.value === '退選' && absValue === 1) {
                     alert('退選失敗，必修課如果需要退選請去找助教');
                 } else if (this.value === '退選') {
                     alert('退選成功');
                     this.value = '加選';
                 }
+                else if (this.value === '加選') {
+                    alert('加選成功');
+                    this.value = '退選';
+                }
             };
         }
     };
+
 </script>
 
 </body>
